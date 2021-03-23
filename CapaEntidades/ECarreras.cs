@@ -18,6 +18,13 @@ namespace CapaEntidades
             {
                 this.Id_carrera = Convert.ToInt32(row["Id_carrera"]);
 
+                this.Fecha_carrera = Convert.ToDateTime(row["Fecha_carrera"]);
+                this.Hora_carrera = Convert.ToString(row["Hora_carrera"]);
+                this.Lugar_ubicacion = Convert.ToString(row["Lugar_ubicacion"]);
+                this.Tiempo_llegada = Convert.ToInt32(row["Tiempo_llegada"]);
+                this.Estado_carrera = Convert.ToString(row["Estado_carrera"]);
+                this.Observaciones = Convert.ToString(row["Observaciones"]);
+
                 this.ECliente = new EClientes
                 {
                     Id_cliente = Convert.ToInt32(row["Id_cliente1"]),
@@ -66,13 +73,6 @@ namespace CapaEntidades
                 };
 
                 this.ETurno = new ETurnos(row);
-
-                this.Fecha_carrera = Convert.ToDateTime(row["Fecha_carrera"]);
-                this.Hora_carrera = Convert.ToString(row["Hora_carrera"]);
-                this.Lugar_ubicacion = Convert.ToString(row["Lugar_ubicacion"]);
-                this.Tiempo_llegada = Convert.ToInt32(row["Tiempo_llegada"]);
-                this.Estado_carrera = Convert.ToString(row["Estado_carrera"]);
-                this.Observaciones = Convert.ToString(row["Observaciones"]);
             }
             catch (Exception ex)
             {

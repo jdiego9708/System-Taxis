@@ -259,6 +259,7 @@ namespace CapaPresentacion.Formularios.FormsVehiculos
             eVehiculo.Modelo = this.txtModelo.Text;
             eVehiculo.Color = this.txtColor.Text;
             eVehiculo.Estado_vehiculo = "ACTIVO";
+            eVehiculo.Correo_chofer = string.Empty;
 
             return true;
 
