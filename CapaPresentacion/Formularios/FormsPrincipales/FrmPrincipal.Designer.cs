@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.panelSuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(51)))));
+            this.panelSuperior.Controls.Add(this.label2);
             this.panelSuperior.Controls.Add(this.lblNombreEmpresa);
             this.panelSuperior.Controls.Add(this.btnClientes);
             this.panelSuperior.Controls.Add(this.btnVehiculos);
@@ -155,6 +157,19 @@
             this.panelPrincipal.Size = new System.Drawing.Size(943, 510);
             this.panelPrincipal.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(246)))), ((int)(((byte)(240)))));
+            this.label2.Location = new System.Drawing.Point(690, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(250, 30);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Copyright © 2021 - Soluciones informáticas \r\njdiego970831@gmail.com";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -186,5 +201,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Label lblNombreEmpresa;
+        private System.Windows.Forms.Label label2;
     }
 }
